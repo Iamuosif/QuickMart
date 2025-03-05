@@ -72,19 +72,6 @@ class OnBoardingBodyWidget extends StatelessWidget {
                             ),
                           ],
                         ),
-                        // : Padding(
-                        //   padding: const EdgeInsets.symmetric(
-                        //     horizontal: 10.0,
-                        //   ),
-                        //   child: CustomNavBar(
-                        //     onTap: () {
-                        //       customReplacementNavigate(
-                        //         context,
-                        //         '/signUp',
-                        //       );
-                        //     },
-                        //   ),
-                        // ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 18),

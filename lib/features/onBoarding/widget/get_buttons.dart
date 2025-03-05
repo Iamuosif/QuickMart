@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_mart/core/functions/navigation.dart';
 import 'package:quick_mart/core/utils/app_colors.dart';
 import 'package:quick_mart/core/widget/custom_button.dart';
 import 'package:quick_mart/features/onBoarding/data/model/on_boarding_model.dart';
@@ -28,7 +29,7 @@ class GetButtons extends StatelessWidget {
           width: 160,
           text: 'Login',
           onPressed: () {
-            // customReplacementNavigate(context, '/login');
+            customReplacementNavigate(context, '/signIn');
           },
           color: AppColors.white,
           textColor: AppColors.black,
@@ -37,7 +38,9 @@ class GetButtons extends StatelessWidget {
           width: 160,
           height: 56,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              customReplacementNavigate(context, '/signUp');
+            },
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.black,
               shape: RoundedRectangleBorder(
