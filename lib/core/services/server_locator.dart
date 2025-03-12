@@ -7,7 +7,4 @@ final getIt = GetIt.instance;
 void setupServiceLocator() {
   getIt.registerSingleton<CacheHelper>(CacheHelper());
   getIt.registerSingleton<AuthCubit>(AuthCubit());
-
-  // Alternatively you could write it if you don't like global variables
-  //GetIt.I.registerSingleton<CacheHelper>(CacheHelper());
 }

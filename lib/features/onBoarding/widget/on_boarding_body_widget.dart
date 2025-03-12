@@ -3,6 +3,7 @@ import 'package:quick_mart/core/functions/navigation.dart';
 import 'package:quick_mart/core/utils/app_assets.dart';
 import 'package:quick_mart/core/utils/app_colors.dart';
 import 'package:quick_mart/features/onBoarding/data/model/on_boarding_model.dart';
+import 'package:quick_mart/features/onBoarding/function/on_boarding_visited.dart';
 import 'package:quick_mart/features/onBoarding/widget/custom_nav_bar.dart';
 import 'package:quick_mart/features/onBoarding/widget/custom_smooth_page_indicator.dart';
 import 'package:quick_mart/features/onBoarding/widget/get_buttons.dart';
@@ -67,6 +68,7 @@ class OnBoardingBodyWidget extends StatelessWidget {
                                 ),
                             CustomNavBar(
                               onTap: () {
+                                isonBoardingVisited();
                                 customReplacementNavigate(context, '/signUp');
                               },
                             ),

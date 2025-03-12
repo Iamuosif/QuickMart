@@ -24,7 +24,7 @@ class _PasswordTextFormFieldState extends State<PasswordTextFormField> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 24, right: 8, left: 8),
+      padding: const EdgeInsets.only(top: 24, right: 6, left: 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

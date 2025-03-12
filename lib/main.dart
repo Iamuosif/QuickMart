@@ -14,7 +14,7 @@ void main() async {
   );
   checkCurrentUserState();
   setupServiceLocator();
-
+  await getIt<CacheHelper>().init();
   runApp(const QuickMart());
 }
 

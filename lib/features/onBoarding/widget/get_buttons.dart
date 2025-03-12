@@ -3,6 +3,7 @@ import 'package:quick_mart/core/functions/navigation.dart';
 import 'package:quick_mart/core/utils/app_colors.dart';
 import 'package:quick_mart/core/widget/custom_button.dart';
 import 'package:quick_mart/features/onBoarding/data/model/on_boarding_model.dart';
+import 'package:quick_mart/features/onBoarding/function/on_boarding_visited.dart';
 
 class GetButtons extends StatelessWidget {
   const GetButtons({
@@ -29,6 +30,7 @@ class GetButtons extends StatelessWidget {
           width: 160,
           text: 'Login',
           onPressed: () {
+            isonBoardingVisited();
             customReplacementNavigate(context, '/signIn');
           },
           color: AppColors.white,
@@ -39,6 +41,7 @@ class GetButtons extends StatelessWidget {
           height: 56,
           child: ElevatedButton(
             onPressed: () {
+              isonBoardingVisited();
               customReplacementNavigate(context, '/signUp');
             },
             style: ElevatedButton.styleFrom(
